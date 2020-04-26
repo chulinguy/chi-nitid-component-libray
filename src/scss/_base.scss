@@ -1,0 +1,49 @@
+@mixin clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin archer {
+  font-family: "Archer SSm A", "Archer SSm B";
+  font-weight: 600;
+}
+
+@mixin archer-heading {
+  @include archer;
+  font-size: 1.125rem;
+  font-style: normal;
+
+  @include medium {
+    font-size: 1.625rem;
+  }
+}
+  
+// responsive break points
+
+@mixin x-small {
+  @media (max-width: 479px) { @content; }
+}
+
+@mixin small {
+  @media (min-width: 480px) { @content; }
+}
+
+@mixin medium {
+  @media (min-width: 720px) { @content; }
+}
+
+@mixin large {
+  @media (min-width: 960px) { @content; }
+}
+
+@mixin x-large {
+  @media (min-width: 1280px) { @content; }
+}

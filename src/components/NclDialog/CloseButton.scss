@@ -1,0 +1,14 @@
+button.close-x {
+  //make a transparent X
+  background-image: url('./close-icon.png');
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  color: transparent;
+  //positioning & sizing
+  font-size: 0;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  padding: 15px;
+}
