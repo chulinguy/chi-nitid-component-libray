@@ -1,6 +1,6 @@
 {
   "name": "chi-nitid-component-libray",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nitid React components written in Typescript",
   "main": "dist/index.js",
   "scripts": {
